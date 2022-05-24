@@ -43,3 +43,10 @@ running or stopped container)
   docker run -network my-network --name cont1 my-image                   // Run container on network
   docker run -network my-network --name cont2 my-other-image             // Run container on network
   ```
+* `docker-compose up` : **Start all containers** / services mentioned in the Docker Compose file
+ * `-d` : Start in **detached mode**
+ *  `--build` : Force Docker Compose to re-evaluate / rebuild all images (otherwise, it only
+does that if an image is missing)
+*  `docker-compose down` : **Stop and remove** all containers / services
+ * `-v` : **Remove all Volumes** used for the Containers - otherwise they stay around, even if
+the Containers are removed
