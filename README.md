@@ -38,3 +38,8 @@ exist when running a container
 * `docker volume rm VOL_NAME` : **Remove a Volume** by it's name (or ID)
 * `docker volume prune` : **Remove all unused Volumes** (i.e. not connected to a currently
 running or stopped container)
+* `docker network create SOME_NAME` : Create network
+* ```
+  docker run -network my-network --name cont1 my-image                   // Run container on network
+  docker run -network my-network --name cont2 my-other-image             // Run container on network
+  ```
